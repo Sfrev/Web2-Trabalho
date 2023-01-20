@@ -25,7 +25,7 @@ const users = [
 ];
 
 // Step 6: Set up the route for authentication
-app.post('/login', (req, res) => {
+app.post('/server', (req, res) => {
   // Step 6a: Retrieve the username and password from the request body
   const { username, password } = req.body;
   
