@@ -4,6 +4,11 @@ const app = express(); // Create an ExpressJS app
 
 const bodyParser = require('body-parser'); // middleware
 
+const admin = {
+    username: 'admin',
+    password: 'admin'
+}
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Route to Homepage
@@ -16,11 +21,22 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/login/static/login.html');
 });
 
+app.get('/carrinho', (req, res) => {
+    res.sendFile(__dirname + '/carrinho.html');
+});
+
 app.post('/login', (req, res) => {
     // Insert Login Code Here
     let username = req.body.username;
     let password = req.body.password;
-    res.send(`Username: ${username} Password: ${password}`);
+    /*
+    if (username === admin.username && password === admin.password) {
+        //res.send(`Bem vindo ${username}!`);
+        res.redirect('/');
+    } else {
+        res.send('Incorrect Username or Password');
+        res.redirect('/login');
+    }*/
 });
 
 const port = 3000 // Port we will listen on
