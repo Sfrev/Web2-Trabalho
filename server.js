@@ -4,16 +4,21 @@ const app = express(); // Create an ExpressJS app
 
 const bodyParser = require('body-parser'); // middleware
 
+const path = require("path");
+
 const admin = {
     username: 'admin',
     password: 'admin'
 }
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('styles'))
+app.use(express.static('javascripts'))
 
 // Route to Homepage
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/paginaPrincipal.html');
+    //res.render('paginaPrincipal.html');
 });
 
 // Route to Login Page
