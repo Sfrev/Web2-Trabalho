@@ -14,6 +14,7 @@ const admin = {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('styles'))
 app.use(express.static('javascripts'))
+app.use(express.static('images'))
 
 // Route to Homepage
 app.get('/', (req, res) => {
