@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./*.{html,js}", "./login/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'solitreo': ['Solitreo', 'cursive'],
+        'caveat': ['Caveat', 'cursive'],
+      }
+    },
+    
   },
   plugins: [
     {

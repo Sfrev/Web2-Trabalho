@@ -651,6 +651,10 @@ video {
   padding-top: 0px;
 }
 
+.font-caveat {
+  font-family: Caveat, cursive;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -659,6 +663,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-sm {
