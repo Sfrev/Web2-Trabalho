@@ -545,20 +545,8 @@ video {
   height: 1.5rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
 .h-16 {
   height: 4rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-full {
@@ -567,10 +555,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-16 {
@@ -616,12 +600,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-red-300 {
-  --tw-gradient-from: #fca5a5;
-  --tw-gradient-to: rgb(252 165 165 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-green-300 {
   --tw-gradient-from: #86efac;
   --tw-gradient-to: rgb(134 239 172 / 0);
@@ -633,11 +611,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #d8b4fe, var(--tw-gradient-to);
 }
 
-.via-yellow-300 {
-  --tw-gradient-to: rgb(253 224 71 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #fde047, var(--tw-gradient-to);
-}
-
 .via-white {
   --tw-gradient-to: rgb(255 255 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to);
@@ -645,10 +618,6 @@ video {
 
 .to-indigo-400 {
   --tw-gradient-to: #818cf8;
-}
-
-.to-green-400 {
-  --tw-gradient-to: #4ade80;
 }
 
 .to-red-400 {
@@ -680,10 +649,6 @@ video {
 
 .pt-0 {
   padding-top: 0px;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-lg {
@@ -747,6 +712,11 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .hover\:text-purple-400:hover {
   --tw-text-opacity: 1;
   color: rgb(192 132 252 / var(--tw-text-opacity));
@@ -773,9 +743,19 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-red-200:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(254 202 202 / var(--tw-ring-opacity));
+}
+
 .active\:bg-gray-500:active {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.active\:bg-red-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .active\:shadow-lg:active {
