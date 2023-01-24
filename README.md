@@ -1,3 +1,4 @@
 # Web2-Trabalho
  
-### Para executar o servidor, use o comando "node server.js" na pasta do projeto
+### npm install -g nodemon
+### Para executar o servidor, use o comando "nodemon server.js" na pasta do projeto
