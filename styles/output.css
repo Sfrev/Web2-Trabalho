@@ -758,3 +758,37 @@ video {
     padding-top: 0px;
   }
 }
+
+
+.margem_c { grid-area: margem_c;
+            height: 80px;
+          }
+
+.margem_e { grid-area: margem_e;}
+
+.titulo { grid-area: titulo;
+          text-align: center;
+        }
+.margem_d { grid-area: margem_d;}
+
+.item { grid-area: item;
+        
+      }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'margem_e margem_c margem_c margem_c margem_c margem_d'
+    'margem_e titulo titulo titulo titulo margem_d'
+    'margem_e item item item item margem_d';
+  
+
+  padding: 10px;
+}
+
+.grid-container > .titulo, .item {
+  background-color: rgba(85, 235, 235, 0.39);
+  
+  padding: 20px 0;
+  font-size: 30px;
+}
