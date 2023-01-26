@@ -13,10 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Solitreo&display=swap" rel="stylesheet">
+  <link href="carrinho.css">
   <script src="nav-button.js" defer></script>
 </head>
 
-<body class="antialiased bg-gradient-to-r from-green-300 via-white to-red-400">
+<body class="antialiased bg-gradient-to-r from-green-600 via-white to-red-600">
   <header>
       <nav
       class="flex flex-wrap  items-center  justify-between w-full text-lg text-gray-700 bg-white p-2">
@@ -67,7 +68,7 @@
                       </a>
                   </li>
                   <li>
-                      <a class="md:p-4 py-2 block hover:text-red-400 text-red-500" href="/login">
+                      <a class="md:p-4 py-2 block hover:text-red-400 text-red-600" href="/login">
                       Log in
                       </a>
                   </li>
@@ -76,6 +77,53 @@
           <!-- </div> -->
       </nav>
   </header>
+  <div class=" mt-32 ml-96 mr-96 antialiased bg-gradient-to-r from-green-600 via-white to-red-600 ">
+    <div class="grid grid-cols-3 gap-4 content-center h-20">
+        <div>
+            <img src="pizza-logo.png" alt="Logo" class="w-16 h-16 ml-60">
+        </div>
+        <div>
+            <h1 class="text-6xl text-center">PEDIDOS</h1>
+        </div>
+        <div>
+            <img src="pizza-logo.png" alt="Logo" class="w-16 h-16 mr-60">
+        </div>
+    </div>
+        
+    </div>
+    <div class="bg-white ml-96 mr-96 grid grid-cols-3 content-start ">
+
+                <h1 class="text text-4xl bg-green-500">calabresa</h1>
+
+                <button class="hover:bg-green-700 rounded">V</button>
+                <button class="hover:bg-red-700">X</button>
+
+                <h1 class="text text-4xl bg-red-400">frango</h1>
+
+                <button class="hover:bg-green-700">V</button>
+                <button class="hover:bg-red-700">X</button>
+
+                <h1 class="text text-4xl bg-green-500">queijo</h1>
+
+                <button class="hover:bg-green-700">V</button>
+                <button class="hover:bg-red-700">X</button>
+
+                <h1 class="text text-4xl bg-red-400">amongus</h1>
+
+                <button class="hover:bg-green-700">V</button>
+                <button class="hover:bg-red-700">X</button>
+
+                <h1 class="text text-4xl bg-green-500">agaragan</h1>
+
+                <button class="hover:bg-green-700">V</button>
+                <button class="hover:bg-red-700">X</button>
+
+    </div>
+  </div>
+    
+    
+    
+  </div>
 </body>
 
 </html>
