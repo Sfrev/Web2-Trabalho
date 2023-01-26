@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#checkbox-dropdown-navbar-menu:checked + div {
+        display: flex;
+}
